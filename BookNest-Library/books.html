@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Explore Books | BookNest Library</title><meta name="description" content="BookNest Library - a curated online library for curious readers.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<!-- ================= HEADER ================= -->
+<header class="site-header"><nav class="nav container" aria-label="Main navigation">
+<a href="index.html" class="logo">📚 BookNest</a>
+<input type="checkbox" id="menu" class="menu-toggle" aria-label="Toggle menu"><label for="menu" class="menu-btn">☰</label>
+<ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="books.html" class=active aria-current=page>Explore Books</a></li><li><a href="categories.html">Categories</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="login.html" class="btn sm">Login</a></li></ul></nav></header>
+<main>
+<section class="container page-title"><h1>Explore Our Collection</h1><p class="lead">Browse by mood, subject, or author. Every title is hand-picked.</p></section>
+<section class="container" aria-label="Book collection">
+<!-- ================= SEARCH & FILTERS ================= -->
+<form class="toolbar" role="search" action="#"><label class="sr" for="q" style="position:absolute;left:-9999px">Search books</label><input id="q" type="search" placeholder="Search by title, author, or topic">
+<label class="sr" for="sort" style="position:absolute;left:-9999px">Sort books</label><select id="sort"><option>Sort: Most popular</option><option>Newest first</option><option>Highest rated</option><option>Title A-Z</option></select></form>
+<div class="chips" role="group" aria-label="Filter by category"><a class="chip on" href="books.html">All</a><a class="chip" href="books.html">Fiction</a><a class="chip" href="books.html">Non-Fiction</a><a class="chip" href="books.html">Technology</a><a class="chip" href="books.html">Business</a><a class="chip" href="books.html">Science</a><a class="chip" href="books.html">Self Development</a><a class="chip" href="books.html">History</a><a class="chip" href="books.html">Biography</a></div>
+<!-- ================= BOOK GRID ================= -->
+<div class="masonry"><article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r1" src="https://picsum.photos/seed/habit/400/400" alt="Book cover for Atomic Habits by James Clear" loading="lazy"></a>
+<div class="cb"><span class="tag">Self Development</span><span class="rating" aria-label="Rating 4.8 out of 5">★ 4.8</span><h3>Atomic Habits</h3><p class="au">James Clear</p><p>Small daily changes that compound into remarkable results.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r2" src="https://picsum.photos/seed/desert/400/500" alt="Book cover for The Alchemist by Paulo Coelho" loading="lazy"></a>
+<div class="cb"><span class="tag">Fiction</span><span class="rating" aria-label="Rating 4.6 out of 5">★ 4.6</span><h3>The Alchemist</h3><p class="au">Paulo Coelho</p><p>A shepherd's journey toward his personal legend.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r3" src="https://picsum.photos/seed/code/400/600" alt="Book cover for Clean Code by Robert C. Martin" loading="lazy"></a>
+<div class="cb"><span class="tag">Technology</span><span class="rating" aria-label="Rating 4.7 out of 5">★ 4.7</span><h3>Clean Code</h3><p class="au">Robert C. Martin</p><p>Practical principles for writing readable, maintainable software.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r4" src="https://picsum.photos/seed/money/400/400" alt="Book cover for The Psychology of Money by Morgan Housel" loading="lazy"></a>
+<div class="cb"><span class="tag">Business</span><span class="rating" aria-label="Rating 4.7 out of 5">★ 4.7</span><h3>The Psychology of Money</h3><p class="au">Morgan Housel</p><p>Timeless lessons on wealth, greed, and happiness.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r1" src="https://picsum.photos/seed/gatsby/400/400" alt="Book cover for The Great Gatsby by F. Scott Fitzgerald" loading="lazy"></a>
+<div class="cb"><span class="tag">Fiction</span><span class="rating" aria-label="Rating 4.4 out of 5">★ 4.4</span><h3>The Great Gatsby</h3><p class="au">F. Scott Fitzgerald</p><p>Jazz Age ambition, love, and loss on Long Island.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r2" src="https://picsum.photos/seed/ikigai/400/500" alt="Book cover for Ikigai by Hector Garcia" loading="lazy"></a>
+<div class="cb"><span class="tag">Self Development</span><span class="rating" aria-label="Rating 4.3 out of 5">★ 4.3</span><h3>Ikigai</h3><p class="au">Hector Garcia</p><p>The Japanese secret to a long and happy life.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r3" src="https://picsum.photos/seed/castle/400/600" alt="Book cover for Harry Potter by J.K. Rowling" loading="lazy"></a>
+<div class="cb"><span class="tag">Fiction</span><span class="rating" aria-label="Rating 4.9 out of 5">★ 4.9</span><h3>Harry Potter</h3><p class="au">J.K. Rowling</p><p>A young wizard discovers his destiny at Hogwarts.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r4" src="https://picsum.photos/seed/mountain/400/400" alt="Book cover for The Hobbit by J.R.R. Tolkien" loading="lazy"></a>
+<div class="cb"><span class="tag">Fiction</span><span class="rating" aria-label="Rating 4.8 out of 5">★ 4.8</span><h3>The Hobbit</h3><p class="au">J.R.R. Tolkien</p><p>Bilbo Baggins joins a quest to reclaim a lost kingdom.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r1" src="https://picsum.photos/seed/ancient/400/400" alt="Book cover for Sapiens by Yuval Noah Harari" loading="lazy"></a>
+<div class="cb"><span class="tag">History</span><span class="rating" aria-label="Rating 4.6 out of 5">★ 4.6</span><h3>Sapiens</h3><p class="au">Yuval Noah Harari</p><p>A sweeping history of how humans came to rule the Earth.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r2" src="https://picsum.photos/seed/galaxy/400/500" alt="Book cover for Cosmos by Carl Sagan" loading="lazy"></a>
+<div class="cb"><span class="tag">Science</span><span class="rating" aria-label="Rating 4.8 out of 5">★ 4.8</span><h3>Cosmos</h3><p class="au">Carl Sagan</p><p>A personal voyage through the universe and our place in it.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r3" src="https://picsum.photos/seed/apple/400/600" alt="Book cover for Steve Jobs by Walter Isaacson" loading="lazy"></a>
+<div class="cb"><span class="tag">Biography</span><span class="rating" aria-label="Rating 4.5 out of 5">★ 4.5</span><h3>Steve Jobs</h3><p class="au">Walter Isaacson</p><p>The authorized story of Apple's relentless co-founder.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r4" src="https://picsum.photos/seed/startup/400/400" alt="Book cover for Zero to One by Peter Thiel" loading="lazy"></a>
+<div class="cb"><span class="tag">Business</span><span class="rating" aria-label="Rating 4.4 out of 5">★ 4.4</span><h3>Zero to One</h3><p class="au">Peter Thiel</p><p>Notes on startups and building the future.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r1" src="https://picsum.photos/seed/stars/400/400" alt="Book cover for A Brief History of Time by Stephen Hawking" loading="lazy"></a>
+<div class="cb"><span class="tag">Science</span><span class="rating" aria-label="Rating 4.5 out of 5">★ 4.5</span><h3>A Brief History of Time</h3><p class="au">Stephen Hawking</p><p>Black holes, the Big Bang, and the nature of time.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r2" src="https://picsum.photos/seed/laptop/400/500" alt="Book cover for The Pragmatic Programmer by Hunt & Thomas" loading="lazy"></a>
+<div class="cb"><span class="tag">Technology</span><span class="rating" aria-label="Rating 4.7 out of 5">★ 4.7</span><h3>The Pragmatic Programmer</h3><p class="au">Hunt & Thomas</p><p>Your journey to mastery as a software craftsperson.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r3" src="https://picsum.photos/seed/books/400/600" alt="Book cover for Educated by Tara Westover" loading="lazy"></a>
+<div class="cb"><span class="tag">Biography</span><span class="rating" aria-label="Rating 4.7 out of 5">★ 4.7</span><h3>Educated</h3><p class="au">Tara Westover</p><p>A memoir of a girl who left home to find an education.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+<article class="card"><a class="cover" href="book-details.html" tabindex="-1"><img class="r4" src="https://picsum.photos/seed/focus/400/400" alt="Book cover for Deep Work by Cal Newport" loading="lazy"></a>
+<div class="cb"><span class="tag">Self Development</span><span class="rating" aria-label="Rating 4.6 out of 5">★ 4.6</span><h3>Deep Work</h3><p class="au">Cal Newport</p><p>Rules for focused success in a distracted world.</p><a class="btn sm" href="book-details.html">Read More</a></div></article>
+</div></section>
+</main>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer"><div class="container"><div class="foot-grid">
+<div><a href="index.html" class="logo">📚 BookNest Library</a><p style="margin-top:12px;max-width:34ch">A curated digital library for curious readers.</p></div>
+<nav aria-label="Quick links"><h3>Quick Links</h3><ul><li><a href="index.html">Home</a></li><li><a href="books.html">Books</a></li><li><a href="categories.html">Categories</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<nav aria-label="Library"><h3>Library</h3><ul><li><a href="books.html">New Arrivals</a></li><li><a href="books.html">Popular Books</a></li><li><a href="books.html">Featured Books</a></li><li><a href="about.html">Authors</a></li></ul></nav>
+<nav aria-label="Social"><h3>Follow Us</h3><ul><li><a href="https://www.instagram.com/">Instagram</a></li><li><a href="https://www.linkedin.com/">LinkedIn</a></li><li><a href="https://www.facebook.com/">Facebook</a></li></ul></nav>
+</div><p class="copy">© 2026 BookNest Library. All Rights Reserved.</p></div></footer></body></html>
